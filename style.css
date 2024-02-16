@@ -1,0 +1,173 @@
+:root {
+  --white: #fff;
+  --black: #1c1c1c !important;
+  --light-grey: #212121;
+  --dark-gray: #4c4c4c4;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: var(--black);
+  font-family: "roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--white);
+  overflow-x: hidden;
+  display: flex;
+  width: 100vw;
+}
+
+.slidebar {
+  position: fixed;
+  display: flex;
+  align-items: Left;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 15%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding-left: 15px;
+  background-color: var(--black);
+  border-right: 1px solid var(--light-grey);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.insta-written-logo {
+  width: 100px;
+  padding: 10px;
+}
+
+.insta-logo {
+  display: none;
+  width: 100px;
+  padding: 0.8rem 0.2rem 1rem 0rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 0.8ren;
+  padding: 0.7rem 0rem;
+  justify-content: flex-start;
+
+}
+
+.botton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.middle {
+  display: none;
+}
+
+.downButtom {
+  display: none;
+}
+
+.center {
+  display: fixed;
+  padding-left: 350px;
+  width: 45vw;
+  justify-content: center;
+}
+
+.story {
+  background-color: linear-gradient(purple, #c6c639, #1c6e97);
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 1rem;
+  margin: auto;
+}
+
+.top-right-conner {
+  padding: 1rem;
+  width: 30%;
+}
+
+.story-pic1 {
+  display: flex;
+  gap: 12px;
+  padding: 0px;
+  overflow-x: scroll;
+}
+
+.story-pic1::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-grd {
+  border-radius: 50%;
+  background: linear-gradient(purple, #c6c639, #1c6e97);
+}
+
+
+.astory-pic {
+  /* fixed  */
+  width: 52px;
+  border-spacing: 20px;
+  height: 52px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  object-fit: cover;
+  background: linear-gradient(purple, #c6c639, #1c6e97);
+}
+
+@media screen and (max-width: 900px) {
+  .slidebar {
+    width: 25px;
+  }
+
+  .nav-button a {
+    display: none;
+  }
+
+  .insta-written-logo {
+    display: none;
+  }
+
+  .insta-logo {
+    display: block;
+  }
+
+  .center {
+    padding-left: 75px;
+    width: 85vw;
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+  .slidebar {
+    display: none;
+  }
+
+
+  .downButtom {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    padding: 4px;
+    border-top: 1px solid white;
+    height: 3rem;
+    width: 100%;
+  }
+}
